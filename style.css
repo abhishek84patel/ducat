@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --btn-color: #ff7900;
+    --white: #fff;
+    --heading-font: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    --h1-color: #020E46;
+    --p-font: 'Open Sans', Arial, sans-serif;
+    --p-color: rgba(55, 56, 62, 0.56);
+    --black: rgb(24, 24, 24);
+}
+
+
+.con {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+/* header section start */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 9px 0px rgb(193 182 182 / 65%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.header-wrapper .logo a {
+    display: block;
+}
+
+.header-wrapper nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-family: var(--p-font);
+}
+
+.header-wrapper nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    transition: all ease 0.3s;
+}
+
+.header-wrapper nav ul a:hover {
+    color: var(--btn-color);
+}
+
+.header-wrapper .menu {
+    display: none;
+}
+
+button {
+    background-color: var(--btn-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    font-family: var(--p-font);
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: all ease 0.3s;
+    box-shadow: 0px 2px 5px 3px rgb(114 110 110 / 30%);
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid var(--btn-color);
+    color: var(--black);
+}
+
+/* header section end */
+
+
+
+/* main section will be start */
+.bg {
+    background-image: linear-gradient(186deg, rgba(230, 235, 240, 0.94) 0%, #E6EBF0 100%), url('https://layouts.b3multimedia.ie/wp-content/uploads/2019/11/crypto27.jpg');
+
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.main-wrapper section {
+    flex: 1;
+    animation: fadeInUp 2s 1;
+}
+
+.main-wrapper .content-wrapper .content {
+    max-width: 417px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.main-wrapper .content-wrapper .content h1 {
+    font-size: 36px;
+    font-family: var(--heading-font);
+    color: var(--h1-color);
+}
+
+.main-wrapper .content-wrapper .content h1 span {
+    color: var(--btn-color);
+}
+
+.main-wrapper .content-wrapper .content P {
+    font-family: var(--p-font);
+    color: var(--p-color);
+    text-align: justify;
+}
+
+.main-wrapper .men-img {
+    height: 500px;
+    align-self: end;
+}
+
+.main-wrapper .men-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* main section will be End */
+
+
+/* services section start */
+.services {
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+
+.services .content-wrapper h2 {
+    font-family: var(--heading-font);
+    padding-bottom: 10px;
+    color: var(--h1-color);
+
+}
+
+.services .content-wrapper p {
+    font-family: var(--p-font);
+    color: var(--p-color);
+    max-width: 530px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.services .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.services .cards .card {
+    padding: 30px;
+    border-top: 4px solid #FF7900;
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px 0px rgb(201 180 180 / 52%);
+    max-width: 280px;
+    text-align: center;
+
+}
+
+.services .cards .card:nth-child(1),
+.services .cards .card:nth-child(3) {
+    scale: 0.9;
+    border-top: 4px solid #D3CDCD;
+    transition: all 0.1s ease-in-out;
+}
+
+.services .cards .card:nth-child(1):hover,
+.services .cards .card:nth-child(3):hover {
+    scale: 1;
+    border-top: 4px solid #FF7900;
+
+}
+
+.services .cards .card img {
+    width: 100px;
+}
+
+.services .cards .card h3 {
+    padding: 10px 0;
+    font-family: var(--heading-font);
+    color: var(--h1-color);
+    font-size: 14px;
+}
+
+.services .cards .card p {
+    font-size: 12px;
+    font-family: var(--p-font);
+    color: var(--p-color);
+}
+
+/* client section start */
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0;
+    flex-wrap: wrap;
+}
+
+.client .content-wrapper {
+    max-width: 450px;
+}
+
+.client .content-wrapper h2 {
+    font-size: 32px;
+    font-family: var(--heading-font);
+    color: var(--h1-color);
+    padding-bottom: 20px;
+}
+
+.client .content-wrapper p {
+    font-family: var(--p-font);
+    color: var(--p-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.client .content-wrapper span {
+    color: var(--btn-color);
+}
+
+.client img {
+    max-width: 450px;
+    width: 100%;
+}
+
+/* client section end */
+.contact img {
+    max-width: 200px;
+}
+.contact{
+    text-align: end;
+}
+
+
+@media (max-width:852px) {
+    .main-wrapper {
+        display: block;
+
+    }
+
+    .main-wrapper .content-wrapper .content {
+        margin: 0 auto;
+    }
+
+    .main-wrapper .content-wrapper .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-wrapper .content-wrapper {
+        padding: 50px 0;
+    }
+
+
+}
+
+@media (max-width:750px) {
+    nav {
+        display: none;
+    }
+
+    .header-wrapper button {
+        display: none;
+    }
+
+    .header-wrapper .menu {
+        display: block;
+    }
+}
