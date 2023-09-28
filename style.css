@@ -213,7 +213,7 @@ button:hover {
     max-width: 280px;
     text-align: center;
     background-color: #fff;
-
+    flex-shrink: 0;
 }
 
 .services .cards .card:nth-child(1),
@@ -317,7 +317,7 @@ button:hover {
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:852px) {
     .main-wrapper {
         display: block;
 
