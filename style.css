@@ -311,12 +311,13 @@ button:hover {
 .contact {
     text-align: end;
 }
-.contact .content-wrapper .content{
+
+.contact .content-wrapper .content {
     margin-left: auto;
 }
 
 
-@media (max-width:852px) {
+@media (max-width:1000px) {
     .main-wrapper {
         display: block;
 
@@ -335,8 +336,8 @@ button:hover {
         padding: 50px 0;
     }
 
-    .client{
-      flex-direction: column;
+    .client {
+        flex-direction: column;
     }
 }
 
