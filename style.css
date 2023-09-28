@@ -270,10 +270,7 @@ button:hover {
 
 }
 
-.client-image,
-.content-wrapper {
-    flex: 1;
-}
+
 
 .client .content {
     max-width: 450px;
@@ -297,10 +294,17 @@ button:hover {
     color: var(--btn-color);
 }
 
+.client-image {
+    max-width: 450px;
+    width: 100%;
+    height: 400px;
+}
+
 .client img {
-    height: 500px;
+    height: 100%;
     object-fit: contain;
     width: 100%;
+
 }
 
 /* client section end */
@@ -316,6 +320,40 @@ button:hover {
     margin-left: auto;
 }
 
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.icons .icon {
+    position: relative;
+}
+
+.icons .icon img {
+    margin-bottom: 20px;
+
+}
+
+.icons .icon p {
+    color: var(--h1-color);
+    font-weight: 600;
+}
+
+.icons .icon::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #a5a1a330;
+    top: 8px;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 
 @media (max-width:852px) {
     .main-wrapper {
