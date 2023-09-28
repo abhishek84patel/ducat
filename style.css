@@ -25,6 +25,26 @@
     width: 95%;
 }
 
+body {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--btn-color);
+    border-radius: 10px;
+}
+
+
 
 /* header section start */
 header {
@@ -76,6 +96,7 @@ button {
     color: var(--white);
     padding: 10px 20px;
     border-radius: 20px;
+    cursor: pointer;
 
     font-family: var(--p-font);
     font-weight: 600;
@@ -185,12 +206,13 @@ button:hover {
 }
 
 .services .cards .card {
-    padding: 50px;
+    padding: 50px 25px;
     border-top: 4px solid #FF7900;
     border-radius: 20px;
-    box-shadow: 0px 3px 8px 0px rgb(201 180 180 / 52%);
+    box-shadow: 6px 2px 10px 2px rgb(230 224 224 / 52%);
     max-width: 280px;
     text-align: center;
+    background-color: #fff;
 
 }
 
@@ -199,12 +221,14 @@ button:hover {
     scale: 0.9;
     border-top: 4px solid #D3CDCD;
     transition: all 0.1s ease-in-out;
+
 }
 
 .services .cards .card:nth-child(1):hover,
 .services .cards .card:nth-child(3):hover {
     scale: 1;
     border-top: 4px solid #FF7900;
+    box-shadow: 6px 2px 10px 8px rgb(231 224 224 / 52%);
 
 }
 
@@ -216,7 +240,7 @@ button:hover {
     padding: 10px 0;
     font-family: var(--heading-font);
     color: var(--h1-color);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .services .cards .card p {
@@ -225,6 +249,17 @@ button:hover {
     color: var(--p-color);
 }
 
+.services .cards .card h4 {
+    font-family: var(--heading-font);
+    color: var(--p-color);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* services section end */
+
 /* client section start */
 .client {
     display: flex;
@@ -232,43 +267,52 @@ button:hover {
     align-items: center;
     gap: 50px;
     padding: 100px 0;
-    flex-wrap: wrap;
+
 }
 
-.client .content-wrapper {
+.client-image,
+.content-wrapper {
+    flex: 1;
+}
+
+.client .content {
     max-width: 450px;
 }
 
-.client .content-wrapper h2 {
+.client .content h2 {
     font-size: 32px;
     font-family: var(--heading-font);
     color: var(--h1-color);
     padding-bottom: 20px;
 }
 
-.client .content-wrapper p {
+.client .content p {
     font-family: var(--p-font);
     color: var(--p-color);
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.client .content-wrapper span {
+.client .content span {
     color: var(--btn-color);
 }
 
 .client img {
-    max-width: 450px;
+    height: 500px;
+    object-fit: contain;
     width: 100%;
 }
 
 /* client section end */
-.contact img {
-    max-width: 200px;
-}
+
+/* contact section */
+
 
 .contact {
     text-align: end;
+}
+.contact .content-wrapper .content{
+    margin-left: auto;
 }
 
 
@@ -291,7 +335,9 @@ button:hover {
         padding: 50px 0;
     }
 
-
+    .client{
+      flex-direction: column;
+    }
 }
 
 @media (max-width:750px) {
