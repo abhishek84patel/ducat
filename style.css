@@ -103,12 +103,14 @@ button {
     border: 2px solid transparent;
     transition: all ease 0.3s;
     box-shadow: 0px 2px 5px 3px rgb(114 110 110 / 30%);
+
 }
 
 button:hover {
     background-color: transparent;
     border: 2px solid var(--btn-color);
     color: var(--black);
+
 }
 
 /* header section end */
@@ -294,16 +296,20 @@ button:hover {
     color: var(--btn-color);
 }
 
-.client-image {
-    max-width: 450px;
-    width: 100%;
-    height: 400px;
+.client .client-image {
+    text-align: end;
+}
+
+.client-image,
+.client .content-wrapper {
+    flex: 1;
 }
 
 .client img {
-    height: 100%;
-    object-fit: contain;
+    max-width: 400px;
+    height: 400px;
     width: 100%;
+    object-fit: contain;
 
 }
 
@@ -314,6 +320,10 @@ button:hover {
 
 .contact {
     text-align: end;
+}
+
+.contact .client-image {
+    text-align: start;
 }
 
 .contact .content-wrapper .content {
