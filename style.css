@@ -131,6 +131,7 @@ button:hover {
 .main-wrapper {
     display: flex;
     align-items: center;
+    padding-top: 50px;
 
 }
 
@@ -165,7 +166,7 @@ button:hover {
 }
 
 .main-wrapper .men-img {
-    height: 500px;
+    height: 440px;
     align-self: end;
 }
 
@@ -555,7 +556,6 @@ footer a {
 
     animation: rotateOut 0.9s 1;
 }
-
 /* mobile navbar will show on click */
 .header-wrapper nav .navshow {
     display: flex;
