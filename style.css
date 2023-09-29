@@ -106,6 +106,8 @@ button {
 
 }
 
+
+
 button:hover {
     background-color: transparent;
     border: 2px solid var(--btn-color);
@@ -530,7 +532,7 @@ footer a {
 }
 
 @media (max-width:750px) {
-    nav {
+    .header-wrapper nav ul {
         display: none;
     }
 
@@ -540,9 +542,31 @@ footer a {
 
     .header-wrapper .menu {
         display: block;
+        z-index: 1;
     }
 
     .icons {
         grid-template-columns: 1fr;
     }
+}
+
+/* menu btn active css */
+.active {
+
+    animation: rotateOut 0.9s 1;
+}
+
+/* mobile navbar will show on click */
+.header-wrapper nav .navshow {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    backdrop-filter: blur(5px);
+
 }
