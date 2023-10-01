@@ -504,7 +504,7 @@ footer a {
 }
 
 
-@media (max-width:852px) {
+@media (max-width:1023px) {
     .main-wrapper {
         display: block;
 
@@ -532,7 +532,7 @@ footer a {
     }
 }
 
-@media (max-width:750px) {
+@media (max-width:767px) {
     .header-wrapper nav ul {
         display: none;
     }
@@ -556,6 +556,7 @@ footer a {
 
     animation: rotateOut 0.9s 1;
 }
+
 /* mobile navbar will show on click */
 .header-wrapper nav .navshow {
     display: flex;
