@@ -141,7 +141,7 @@ button:hover {
 }
 
 .main-wrapper .content-wrapper .content {
-    max-width: 417px;
+    /* max-width: 417px; */
     margin-left: auto;
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@ button:hover {
 .services .content-wrapper p {
     font-family: var(--p-font);
     color: var(--p-color);
-    max-width: 530px;
+    /* max-width: 530px; */
     line-height: 1.5;
     margin: 0 auto;
 }
@@ -279,7 +279,7 @@ button:hover {
 
 
 .client .content {
-    max-width: 450px;
+    /* max-width: 450px; */
 }
 
 .client .content h2 {
@@ -407,7 +407,7 @@ button:hover {
 .contact-form .content-wrapper p {
     font-family: var(--p-font);
     color: var(--p-color);
-    max-width: 530px;
+    /* max-width: 530px; */
     line-height: 1.5;
     margin: 0 auto;
 }
@@ -504,7 +504,7 @@ footer a {
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:1023px) {
     .main-wrapper {
         display: block;
 
