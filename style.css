@@ -132,7 +132,8 @@ button:hover {
     display: flex;
     align-items: center;
     padding-top: 50px;
-
+    max-width: 1000px;
+    margin: auto;
 }
 
 .main-wrapper section {
@@ -183,6 +184,8 @@ button:hover {
 .services {
     padding: 100px 0;
     text-align: center;
+    max-width: 1000px;
+    margin: auto;
 }
 
 
@@ -273,14 +276,14 @@ button:hover {
     align-items: center;
     gap: 50px;
     padding: 100px 0;
+    max-width: 1000px;
+    margin: auto;
 
 }
 
 
 
-.client .content {
-    /* max-width: 450px; */
-}
+
 
 .client .content h2 {
     font-size: 32px;
@@ -373,6 +376,7 @@ button:hover {
 }
 
 /* contact section end*/
+
 /* ceo section start */
 .client .content .arrow {
     padding: 10px;
@@ -400,6 +404,11 @@ button:hover {
     padding: 100px 0;
 }
 
+.form-wrapper {
+    margin: auto;
+    max-width: 650px;
+}
+
 .contact-form .content-wrapper {
     text-align: center;
 }
@@ -407,7 +416,8 @@ button:hover {
 .contact-form .content-wrapper p {
     font-family: var(--p-font);
     color: var(--p-color);
-    /* max-width: 530px; */
+
+
     line-height: 1.5;
     margin: 0 auto;
 }
@@ -529,6 +539,15 @@ footer a {
 
     .icons {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .main-wrapper,
+    .services,
+    .client,
+    .contact,
+    .ceo,
+    .contact-form {
+        padding-inline: 16px;
     }
 }
 
