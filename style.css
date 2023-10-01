@@ -134,6 +134,7 @@ button:hover {
     padding-top: 50px;
     max-width: 1000px;
     margin: auto;
+    gap: 50px;
 }
 
 .main-wrapper section {
@@ -166,7 +167,7 @@ button:hover {
 }
 
 .main-wrapper .men-img {
-    height: 440px;
+    height: 380px;
     align-self: end;
 }
 
@@ -313,7 +314,6 @@ button:hover {
 }
 
 .client img {
-    max-width: 450px;
     height: 400px;
     width: 100%;
     object-fit: contain;
