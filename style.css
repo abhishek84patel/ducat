@@ -142,7 +142,6 @@ button:hover {
 }
 
 .main-wrapper .content-wrapper .content {
-    /* max-width: 417px; */
     margin-left: auto;
     display: flex;
     flex-direction: column;
@@ -200,7 +199,6 @@ button:hover {
 .services .content-wrapper p {
     font-family: var(--p-font);
     color: var(--p-color);
-    /* max-width: 530px; */
     line-height: 1.5;
     margin: 0 auto;
 }
@@ -340,16 +338,18 @@ button:hover {
 }
 
 .icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     gap: 50px;
     text-align: center;
-    max-width: 1000px;
+    max-width: 800px;
+    flex-wrap: wrap;
     margin: auto;
 }
 
 .icons .icon {
     position: relative;
+    flex: 1 0 auto;
 }
 
 .icons .icon img {
@@ -404,9 +404,9 @@ button:hover {
     padding: 100px 0;
 }
 
-.form-wrapper {
+.contact-form .form-wrapper {
+    max-width: 600px;
     margin: auto;
-    max-width: 1000px;
 }
 
 .contact-form .content-wrapper {
@@ -431,9 +431,9 @@ button:hover {
 .contact-form form .input-wrapper {
     display: flex;
     gap: 50px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
 
 }
 
@@ -447,11 +447,7 @@ button:hover {
     background-color: transparent;
 }
 
-.contact-form form {
-    max-width: 500px;
-    margin: auto;
 
-}
 
 .contact-form form textarea {
     padding: 20px 20px;
@@ -492,6 +488,7 @@ button:hover {
 }
 
 /* contact form style end */
+
 /* footer style start */
 footer {
     background-color: #343352;
@@ -513,6 +510,31 @@ footer a {
 
 }
 
+/* footer style end */
+
+
+
+
+/* menu btn active css */
+.active {
+
+    animation: rotateOut 0.9s 1;
+}
+
+/* mobile navbar will show on click */
+.header-wrapper nav .navshow {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    backdrop-filter: blur(5px);
+
+}
 
 @media (max-width:1024px) {
     .main-wrapper {
@@ -537,9 +559,8 @@ footer a {
         flex-direction: column;
     }
 
-    .icons {
-        grid-template-columns: 1fr 1fr;
-    }
+
+
 
     .main-wrapper,
     .services,
@@ -565,28 +586,5 @@ footer a {
         z-index: 1;
     }
 
-    .icons {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* menu btn active css */
-.active {
-
-    animation: rotateOut 0.9s 1;
-}
-
-/* mobile navbar will show on click */
-.header-wrapper nav .navshow {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    left: 0;
-    align-items: center;
-    top: 0;
-    height: 100%;
-    backdrop-filter: blur(5px);
 
 }
