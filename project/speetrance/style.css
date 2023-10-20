@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #222222;
+}
+
+.con {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 16px;
+}
+
+header {
+    display: flex;
+
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 5px 0;
+    border: 2px solid gray;
+    border-radius: 30px;
+}
+
+header ul li:first-child {
+    margin-left: 36px;
+}
+
+header ul li {
+    padding: 5px 10px;
+
+    margin-right: 36px;
+
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Rubik;
+    font-weight: 500;
+}
+
+header .searchbar {
+    display: flex;
+
+}
+
+header .searchbar span {
+    color: #fff;
+}
+
+header .menu-btn {
+    margin-left: 25px;
+}
+
+/* section top */
+
+.top {
+    padding-top: 20px;
+    position: relative;
+    min-height: calc(100vh - 3.5vw);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.top::after {
+    content: url(./src/Thorus\ 2.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.top::before {
+    content: url(./src/Group\ 48096042.png);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: 600px;
+}
+
+.top .con::before {
+    content: url(./src/1_3.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.top .content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.top .content-wrapper::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 322px;
+    background: rgba(19, 65, 236, 0.40);
+    filter: blur(90px);
+    position: absolute;
+    bottom: 0;
+    bottom: 80px;
+    left: 100px;
+}
+
+.top .content-wrapper::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 322px;
+    background: rgba(19, 65, 236, 0.40);
+    filter: blur(90px);
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.top .content-wrapper h1 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 81.7px;
+    margin: initial;
+    margin-bottom: 30px;
+
+}
+
+.top .content-wrapper p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18.667px;
+    max-width: 500px;
+    line-height: 24px;
+}
+
+.top .my-btn {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.top .my-btn button {
+
+    border: none;
+    color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: Rubik;
+    background: radial-gradient(76.16% 76.16% at 31.97% 19.67%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.00) 69.79%, rgba(255, 255, 255, 0.00) 100%), #1341EC;
+    box-shadow: 2.5618px 24.33708px 39.70786px 0px rgba(0, 0, 0, 0.50);
+    padding: 10px 50px;
+}
+
+.top .slider {
+    margin: auto;
+    max-width: 700px;
+}
+
+.second {
+    padding: 100px 16px;
+}
+
+.second .content-wrapper {
+    text-align: center;
+    color: #FFF;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.second .content-wrapper h2 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.second .content-wrapper h3 {
+    margin: 20px 0;
+    font-size: 1.7rem;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.second .cards {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.second .cards .card {
+    position: relative;
+    color: #FFF;
+    width: 200px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.second .cards .card h3 {
+    font-size: 7rem;
+    position: relative;
+    font-family: Poppins;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.20);
+
+
+
+}
+
+.second .cards .card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: poppins;
+}
+
+.develop {
+    background-color: #F4F5F7;
+
+}
+
+.develop .content-wrapper {
+    position: relative;
+}
+
+.develop .content-wrapper,
+.develop .card h3,
+.develop .card p {
+    color: initial;
+}
+
+.develop .content-wrapper button {
+    background: linear-gradient(96deg, #1341EC -2.76%, #9174E3 100%);
+    padding: 7px 30px;
+    color: #FFF;
+
+    font-family: Poppins;
+    font-size: 1.5rem;
+
+    font-weight: 500;
+
+    border: none;
+}
+
+.develop .content-wrapper::after {
+    content: 'SpeeTrance';
+    position: absolute;
+    font-size: clamp(3.125rem, -2.0345rem + 16.8508vw, 8.75rem);
+    bottom: -5vw;
+    font-family: poppins;
+    color: rgba(34, 34, 34, 0.05);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Poppins;
+
+    font-weight: 700;
+
+
+}
+
+.develop .Dcards {
+    display: flex;
+    gap: 50px;
+    padding: 100px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.develop .card {
+
+    height: 250px;
+    flex-shrink: 0;
+    padding-left: 16px;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 0 19px 0px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.develop .card p {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.develop .card .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.develop .card .logo img {
+    width: 100px;
+}
+
+/*  */
+
+/*  */
+@media(max-width:1024px) {
+    header ul {
+        display: none;
+    }
+    .top{
+        min-height: 800px;
+    }
+
+    .top .content-wrapper h1 {
+        font-size: 3rem;
+    }
+
+    .top .con::before,
+    .top::after,
+    .top::before {
+        content: none;
+    }
+
+}
+
+@media (max-width:768px) {
+    .top .content-wrapper h1 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+}
+
+@media (max-width:425px) {
+    .top {
+        min-height: 800px;
+    }
+    .second .content-wrapper h2{
+        font-size: 1.5rem;
+    }
+    .top .content-wrapper h1 ,.top .content-wrapper h3{
+        font-size: 1rem;
+
+    }
+    .develop .content-wrapper button{
+        font-size: 1rem;
+    }
+    .second .cards .card h3{
+        font-size: 5rem;
+    }
+}

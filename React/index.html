@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+        import img1 from './src/Logo.png'
+        const container = document.getElementById("mydiv");
+        const root = ReactDOM.createRoot(container);
+        root.render(<Hello />);
+        function Hello() {
+            return <>
+
+                <header className="con">
+                    <div className="logo">
+                        <img src="src/speetrance 1 (1).png" alt="" />
+                    </div>
+                    <nav>
+                        <ul className="flex gap-4	">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Career</a></li>
+                            <li><a href="">Contact Us</a></li>
+
+                        </ul>
+                    </nav>
+                    <div className="searchbar">
+                        <span className="material-symbols-outlined">
+                            search
+                        </span>
+                        <div className="menu-btn">
+                            <img src={img1} alt="" />
+                        </div>
+                    </div>
+                </header>
+            </>;
+        }
+    </script>
+
+</body>
+
+</html>

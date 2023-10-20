@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wall clock</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+
+        .circle {
+            width: 400px;
+            height: 400px;
+            border: 10px solid black;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-image: url(https://www.kindpng.com/picc/m/5-55539_transparent-broken-clock-clipart-transparent-background-clock-face.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .mid {
+            position: absolute;
+            height: 180px;
+            width: 10px;
+            background-color: red;
+            margin-left: 190px;
+            margin-top: 20px;
+
+        }
+
+        .mid::before {
+            content: '\25B2';
+            font-size: 30px;
+            margin-left: -10px;
+            position: absolute;
+            color: red;
+            margin-top: -20px;
+
+
+        }
+
+        .mid::after {
+
+            content: '';
+            width: 20px;
+            position: absolute;
+            border-radius: 50%;
+            /* bottom: -10px; */
+            /* left: -5px; */
+            margin-left: -5px;
+            margin-top: 170px;
+            height: 20px;
+            background-color: rebeccapurple;
+        }
+    </style>
+    <div class="circle">
+        <div class="mid">
+
+        </div>
+        <div class="hours mid">
+
+        </div>
+        <div class="second hours mid">
+
+        </div>
+    </div>
+    <script>
+        const second = document.getElementsByClassName("mid")[0]
+        const hours = document.getElementsByClassName("mid")[1]
+        const minute = document.getElementsByClassName("mid")[2]
+
+        function showTime() {
+            const getTime = new Date();
+            const Hours = getTime.getHours();
+            const min = getTime.getMinutes();
+            const getSeconds = getTime.getSeconds();
+            console.log(Hours, min, getSeconds)
+            second.style.transform = `rotate(${getSeconds * 6}deg)`
+            second.style.transformOrigin = `bottom`
+            minute.style.transform = `rotate(${min * 6}deg)`
+            minute.style.transformOrigin = `bottom`
+            hours.style.transform = `rotate(${Hours/2*6}deg)`
+            hours.style.transformOrigin = `bottom`
+            // second.style.backgroundColor = `yellow`;
+        }
+        // setInterval(showTime, 1000)
+    </script>
+</body>
+
+</html>

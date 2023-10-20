@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .watch {
+            width: 500px;
+            height: 500px;
+            border: 10px solid black;
+            border-radius: 100%;
+        }
+
+        #ned {
+            width: 10px;
+            height: 230px;
+            background-color: red;
+            /* position: absolute; */
+            /* margin-left: 245px; */
+            /* margin-top: 20px; */
+            transform-origin: bottom;
+        }
+
+        #ned::before {
+            content: "\2B9D";
+            color: red;
+            font-size: 42px;
+            margin: -26px 0px -1px -12px;
+            position: absolute;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="time">sdfsfs</h1>
+<!-- 
+    <script>
+function mydate()
+{
+var a = new Date();
+var h = a.getHours();
+var m = a.getMinutes();
+var s = a.getSeconds();
+var mytime =h+":"+m+":"+s;
+document.getElementById('time').innerHTML=mytime;
+
+var ned = document.getElementById('ned');
+	ned.style.transform="rotate("+(s*6)+"deg)";
+
+}
+
+setInterval("mydate()",1000);
+
+
+
+
+
+</script> -->
+
+    <div class="watch">
+        <div id="ned"></div>
+
+    </div>
+
+</body>
+
+</html>
